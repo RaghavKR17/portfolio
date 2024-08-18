@@ -129,116 +129,70 @@ section p {
     margin-top: 20px;
 }
 
-#portfolio .portfolio-item-info h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#portfolio .portfolio-item-info p {
-    font-size: 1em;
-    color: #777;
-}
-
 /* Projects Section */
-#projects {
-    padding: 60px 0;
-}
-
-.project {
+#projects .project {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
     margin-bottom: 40px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
 }
 
-.project:hover {
-    transform: scale(1.05);
+#projects .project .content {
+    flex: 1;
+    margin-right: 20px;
 }
 
-.project img {
-    max-width: 100%;
+#projects .project img {
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
 }
 
-.project .content {
-    margin-bottom: 20px;
-}
-
-.btn-secondary {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.btn-secondary:hover {
-    background: #f0a500;
-    transform: scale(1.05);
-}
-
-.github {
+#projects .github {
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
 
-.github a {
-    color: #f0a500;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 10px;
-}
-
-.github img {
+#projects .github img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
 }
 
+#projects .intext-link {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+#projects .intext-link:hover {
+    text-decoration: underline;
+}
+
 /* Services Section */
 #services .service-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #services .service-item {
-    flex: 1;
-    max-width: 30%;
-    margin: 15px;
-    text-align: center;
-    padding: 20px;
     background: #fff;
     border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 #services .service-item:hover {
-    transform: scale(1.05);
+    background: #f0a500;
+    color: #fff;
 }
 
 #services .service-item i {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #f0a500;
-    margin-bottom: 15px;
-}
-
-#services .service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-#services .service-item p {
-    font-size: 1em;
-    color: #555;
 }
 
 /* Contact Section */
@@ -246,22 +200,40 @@ section p {
     text-align: center;
 }
 
-#contact .contact-info p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
 #contact .contact-info a {
     color: #f0a500;
     text-decoration: none;
-    font-weight: 600;
+}
+
+#contact .contact-info a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
     background: #333;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
-    font-size: 0.9em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services .service-list {
+        flex-direction: column;
+    }
+
+    #services .service-item {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
