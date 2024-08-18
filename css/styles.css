@@ -8,6 +8,7 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Container */
 .container {
     width: 85%;
     max-width: 1200px;
@@ -111,6 +112,11 @@ section p {
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#portfolio .portfolio-item:hover {
+    transform: scale(1.05);
 }
 
 #portfolio .portfolio-item img {
@@ -126,6 +132,7 @@ section p {
 #portfolio .portfolio-item-info h3 {
     font-size: 1.8em;
     color: #333;
+    margin-bottom: 10px;
 }
 
 #portfolio .portfolio-item-info p {
@@ -143,6 +150,13 @@ section p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project img {
@@ -161,11 +175,31 @@ section p {
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .btn-secondary:hover {
     background: #f0a500;
+    transform: scale(1.05);
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.github a {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.github img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 /* Services Section */
@@ -184,6 +218,11 @@ section p {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#services .service-item:hover {
+    transform: scale(1.05);
 }
 
 #services .service-item i {
@@ -224,4 +263,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    font-size: 0.9em;
 }
