@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghav Krishna Ranganathan | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -19,6 +20,7 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
+                <a href="#projects">Projects</a> <!-- Added Projects -->
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -26,27 +28,27 @@
     </nav>
 
     <!-- Header Section -->
-    <header id="home">
+    <header id="home" class="animate__animated animate__fadeIn">
         <div class="container">
-            <h1 class="animate__animated animate__fadeIn">Hello, I'm Raghav Krishna Ranganathan</h1>
-            <p class="animate__animated animate__fadeIn animate__delay-1s">Computer Science Enthusiast | ACM Vice President | Aspiring Nonprofit Founder</p>
-            <a href="#portfolio" class="btn-primary animate__animated animate__bounceIn">View My Work</a>
+            <h1>Hello, I'm Raghav Krishna Ranganathan</h1>
+            <p>Computer Science Enthusiast | ACM Vice President | Aspiring Nonprofit Founder</p>
+            <a href="#portfolio" class="btn-primary animate__animated animate__pulse">View My Work</a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="animate__animated animate__fadeIn">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a dedicated and driven computer science enthusiast currently in the Running Start program at Bellevue College. My passion for technology is matched only by my commitment to making a positive impact in my community. Whether it's through leading the ACM at Bellevue College or volunteering my skills to help senior citizens stay safe at home, I believe in the power of technology to bring about meaningful change.</p>
+            <p>I'm a dedicated and driven computer science enthusiast currently in the Running Start program at Bellevue College. My passion for technology is matched only by my commitment to making a positive impact in my community. Whether it's through leading the ACM at Bellevue College, founding the Bellevue College Music Club, or volunteering my skills to help senior citizens stay safe at home, I believe in the power of technology to bring about meaningful change.</p>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="animate__animated animate__fadeIn">
         <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio-item">
+            <div class="portfolio-item animate__animated animate__fadeInUp">
                 <img src="assets/images/seniors.jpg" alt="Senior Citizen Safety Initiative">
                 <div class="portfolio-item-info">
                     <h3>Senior Citizen Safety Initiative</h3>
@@ -57,44 +59,42 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project animate__animated animate__fadeInUp">
-                <div class="content">
-                    <h3>AI Gearbox</h3>
-                    <p>In one of my hackathon submissions, I, <a href="https://github.com/daksh-g" target="_blank" class="intext-link">Daksh</a>, and <a href="https://github.com/EpicGamer007" target="_blank" class="intext-link">Abhay</a> created a website that hosts AI tools to help students. This project won the prize for "Best Use of AI in Education" at the MLH 2023 December Hackathon, which had nearly 400 participants.</p>
-                    <a href="https://devpost.com/software/ai-gearbox" target="_blank" class="btn-secondary">Link</a>
-                    <div class="github">
-                        <a href="https://github.com/daksh-g/AI-Gearbox" target="_blank">Github</a>
-                        <img src="images/github.svg" alt="github icon">
-                    </div>
+    <section id="projects" class="animate__animated animate__fadeIn">
+        <h1 class="animate__animated animate__fadeIn">My Projects</h1>
+        <div class="project left ai-gearbox animate__animated animate__fadeInUp">
+            <div class="content">
+                <h2 class="animate__animated animate__fadeIn">AI Gearbox</h2>
+                <p class="animate__animated animate__fadeIn">In one of my hackathon submissions, I, <a href="https://github.com/daksh-g" data-content="Daksh" target="_blank" class="intext-link">Daksh</a>, and <a href="https://github.com/EpicGamer007" data-content="Abhay" target="_blank" class="intext-link">Abhay</a> made a website that hosts AI tools to help students. This won the prize for "Best Use of AI in Education" in the MLH 2023 December Hackathon, which had almost 400 participants.</p>
+                <a class="btn-secondary" href="https://devpost.com/software/ai-gearbox" target="_blank">Link</a>
+                <div class="github animate__animated animate__fadeInUp">
+                    <a href="https://github.com/daksh-g/AI-Gearbox" target="_blank">Github</a>
+                    <img src="images/github.svg" alt="github icon">
                 </div>
-                <div class="rect-and-circle">
-                    <div class="rect"></div>
-                    <div class="circle"></div>
-                </div>
-                <img src="images/ai-gearbox.png" alt="AI Gearbox">
             </div>
+            <div class="rect-and-circle animate__animated animate__fadeInUp">
+                <div class="rect"></div>
+                <div class="circle"></div>
+            </div>
+            <img class="animate__animated animate__fadeInUp" src="images/ai-gearbox.png" alt="image of ai gearbox">
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="animate__animated animate__fadeIn">
         <div class="container">
             <h2>Services</h2>
             <div class="service-list">
-                <div class="service-item animate__animated animate__fadeIn">
+                <div class="service-item animate__animated animate__fadeInUp">
                     <i class="fas fa-code"></i>
                     <h3>Custom Software Development</h3>
                     <p>Building tailored software solutions to meet unique needs.</p>
                 </div>
-                <div class="service-item animate__animated animate__fadeIn animate__delay-1s">
+                <div class="service-item animate__animated animate__fadeInUp">
                     <i class="fas fa-chalkboard-teacher"></i>
                     <h3>Technology Education & Mentorship</h3>
                     <p>Sharing knowledge and guiding the next generation of tech enthusiasts.</p>
                 </div>
-                <div class="service-item animate__animated animate__fadeIn animate__delay-2s">
+                <div class="service-item animate__animated animate__fadeInUp">
                     <i class="fas fa-hands-helping"></i>
                     <h3>Community Outreach & Consulting</h3>
                     <p>Offering expertise to nonprofits and community-driven projects.</p>
@@ -104,7 +104,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="animate__animated animate__fadeIn">
         <div class="container">
             <h2>Contact Me</h2>
             <div class="contact-info">
@@ -117,12 +117,10 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Raghav Krishna Ranganathan. Passionate about coding, community, and creating a safer world through technology.</p>
+            <p>&copy; 2024 Raghav Krishna Ranganathan. "Passionate about coding, community, and creating a safer world through technology."</p>
         </div>
     </footer>
 
     <script src="js/scripts.js"></script>
-    <!-- Include Animate.css for animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </body>
 </html>
