@@ -107,26 +107,7 @@ section p {
 
 /* Portfolio Section */
 #portfolio .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-    transition: transform 0.3s ease-in-out;
-}
-
-#portfolio .portfolio-item:hover {
-    transform: scale(1.05);
-}
-
-#portfolio .portfolio-item img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio .portfolio-item-info {
-    margin-top: 20px;
+    display: none; /* Remove if the Senior Citizen project is now part of Projects section */
 }
 
 /* Projects Section */
@@ -152,7 +133,7 @@ section p {
 
 .project img {
     width: 100%;
-    max-width: 600px; /* Adjusted to ensure it fits nicely */
+    max-width: 600px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -215,7 +196,6 @@ section p {
 .intext-link:hover {
     text-decoration: underline;
 }
-
 
 /* Services Section */
 #services .service-list {
