@@ -173,32 +173,62 @@ section p {
     text-decoration: underline;
 }
 
-/* Services Section */
-#services .service-list {
+/* Pycamp Section */
+.pycamp-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.pycamp-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.pycamp-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-#services .service-item {
+.pycamp-item {
+    flex: 1 1 30%;
+    margin: 20px;
     background: #fff;
-    border-radius: 10px;
     padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 30%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+    transition: transform 0.3s ease-in-out;
 }
 
-#services .service-item:hover {
-    background: #f0a500;
-    color: #fff;
+.pycamp-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-#services .service-item i {
-    font-size: 2em;
-    color: #f0a500;
+.pycamp-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pycamp-item ul li {
+    margin-bottom: 10px;
+}
+
+.pycamp-item ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s ease-in-out;
+}
+
+.pycamp-item ul li a:hover {
+    color: #0056b3;
+}
+
+.pycamp-item:hover {
+    transform: translateY(-5px);
 }
 
 /* Contact Section */
