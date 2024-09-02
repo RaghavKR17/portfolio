@@ -7,11 +7,6 @@ Welcome to my personal portfolio site! This site showcases my projects, accompli
 - [Sections](#sections)
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## About the Site
 This portfolio is a collection of my work, including projects, educational achievements, and extracurricular activities. The site is designed to be a hub where visitors can explore my skills and experiences. It also includes links to external resources such as my GitHub, LinkedIn, and other professional profiles.
