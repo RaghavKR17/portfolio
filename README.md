@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio site! This site showcases my projects, accomplishments, and skills in computer science, programming, and more. Below you'll find a detailed overview of the structure and contents of the site.
 
+Here is the site link: https://raghavkr17.github.io/portfolio/
+
 ## Table of Contents
 - [About the Site](#about-the-site)
 - [Sections](#sections)
