@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    color: #E0E0E0;
+    color: #e0e0e0;
     line-height: 1.6;
-    background-color: #1C1C1C;
+    background-color: #121212;
 }
 
 /* Container */
@@ -18,12 +18,13 @@ body {
 
 /* Navigation */
 nav {
-    background: #282828;
+    background: #1f1f1f;
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav .container {
@@ -33,27 +34,28 @@ nav .container {
 }
 
 nav .nav-brand a {
-    color: #E0E0E0;
+    color: #e0e0e0;
     font-size: 1.5em;
     font-weight: 700;
     text-decoration: none;
 }
 
 nav .nav-links a {
-    color: #E0E0E0;
+    color: #e0e0e0;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 nav .nav-links a:hover {
-    color: #FFD700;
+    color: #1e90ff;
 }
 
 /* Header Section */
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/header-bg.jpg') no-repeat center center/cover;
-    color: #E0E0E0;
+    color: #e0e0e0;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -65,26 +67,28 @@ header h1 {
     font-size: 3em;
     margin-bottom: 20px;
     font-weight: 700;
+    animation: fadeIn 1s ease-in-out;
 }
 
 header p {
     font-size: 1.2em;
     margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header .btn-primary {
-    background: #FFD700;
-    color: #1C1C1C;
+    background: #1e90ff;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 header .btn-primary:hover {
-    background: #E0E0E0;
-    color: #1C1C1C;
+    background: #00bfff;
+    transform: scale(1.05);
 }
 
 /* Sections */
@@ -97,18 +101,19 @@ section h2 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: 700;
-    color: #FFD700;
+    color: #1e90ff;
+    animation: fadeIn 1s ease-in-out;
 }
 
 section p {
     font-size: 1.1em;
-    color: #B0B0B0;
+    color: #b0b0b0;
 }
 
 /* Projects Section */
 #projects {
     padding: 60px 0;
-    background: #282828;
+    background: #1c1c1c;
 }
 
 .project {
@@ -124,14 +129,19 @@ section p {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .project img {
     width: 100%;
-    max-width: 600px; /* Adjusted to ensure it fits nicely */
+    max-width: 600px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
 }
 
 .project-info {
@@ -140,33 +150,33 @@ section p {
 
 .project-info h3 {
     font-size: 2em;
-    color: #FFD700;
+    color: #1e90ff;
     margin-bottom: 10px;
 }
 
 .project-info p {
     font-size: 1em;
-    color: #B0B0B0;
+    color: #b0b0b0;
     margin-bottom: 20px;
 }
 
 .btn-secondary {
-    background: #FFD700;
-    color: #1C1C1C;
+    background: #1e90ff;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background: #E0E0E0;
+    background: #00bfff;
     transform: scale(1.05);
 }
 
 .intext-link {
-    color: #FFD700;
+    color: #1e90ff;
     text-decoration: none;
 }
 
@@ -177,14 +187,15 @@ section p {
 /* Pycamp Section */
 .pycamp-section {
     padding: 60px 0;
-    background-color: #1C1C1C;
+    background-color: #121212;
 }
 
 .pycamp-section h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #FFD700;
+    color: #1e90ff;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .pycamp-content {
@@ -196,17 +207,18 @@ section p {
 .pycamp-item {
     flex: 1 1 30%;
     margin: 20px;
-    background: #282828;
+    background: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .pycamp-item h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #FFD700;
+    color: #1e90ff;
 }
 
 .pycamp-item ul {
@@ -220,12 +232,12 @@ section p {
 
 .pycamp-item ul li a {
     text-decoration: none;
-    color: #FFD700;
-    transition: color 0.2s ease-in-out;
+    color: #1e90ff;
+    transition: color 0.2s ease;
 }
 
 .pycamp-item ul li a:hover {
-    color: #E0E0E0;
+    color: #00bfff;
 }
 
 .pycamp-item:hover {
@@ -238,7 +250,7 @@ section p {
 }
 
 #contact .contact-info a {
-    color: #FFD700;
+    color: #1e90ff;
     text-decoration: none;
 }
 
@@ -248,14 +260,26 @@ section p {
 
 /* Footer */
 footer {
-    background: #282828;
-    color: #E0E0E0;
+    background: #1f1f1f;
+    color: #e0e0e0;
     padding: 20px 0;
     text-align: center;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
