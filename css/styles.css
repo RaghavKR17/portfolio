@@ -3,9 +3,9 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #E0E0E0;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: #1C1C1C;
 }
 
 /* Container */
@@ -18,7 +18,7 @@ body {
 
 /* Navigation */
 nav {
-    background: #333;
+    background: #282828;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -33,27 +33,27 @@ nav .container {
 }
 
 nav .nav-brand a {
-    color: #fff;
+    color: #E0E0E0;
     font-size: 1.5em;
     font-weight: 700;
     text-decoration: none;
 }
 
 nav .nav-links a {
-    color: #fff;
+    color: #E0E0E0;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 400;
 }
 
 nav .nav-links a:hover {
-    color: #f0a500;
+    color: #FFD700;
 }
 
 /* Header Section */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/header-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/header-bg.jpg') no-repeat center center/cover;
+    color: #E0E0E0;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -73,8 +73,8 @@ header p {
 }
 
 header .btn-primary {
-    background: #f0a500;
-    color: #fff;
+    background: #FFD700;
+    color: #1C1C1C;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -83,8 +83,8 @@ header .btn-primary {
 }
 
 header .btn-primary:hover {
-    background: #fff;
-    color: #333;
+    background: #E0E0E0;
+    color: #1C1C1C;
 }
 
 /* Sections */
@@ -97,18 +97,18 @@ section h2 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: 700;
-    color: #333;
+    color: #FFD700;
 }
 
 section p {
     font-size: 1.1em;
-    color: #555;
+    color: #B0B0B0;
 }
 
 /* Projects Section */
 #projects {
     padding: 60px 0;
-    background: #fff;
+    background: #282828;
 }
 
 .project {
@@ -131,6 +131,7 @@ section p {
     max-width: 600px; /* Adjusted to ensure it fits nicely */
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .project-info {
@@ -139,19 +140,19 @@ section p {
 
 .project-info h3 {
     font-size: 2em;
-    color: #333;
+    color: #FFD700;
     margin-bottom: 10px;
 }
 
 .project-info p {
     font-size: 1em;
-    color: #555;
+    color: #B0B0B0;
     margin-bottom: 20px;
 }
 
 .btn-secondary {
-    background: #333;
-    color: #fff;
+    background: #FFD700;
+    color: #1C1C1C;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -160,12 +161,12 @@ section p {
 }
 
 .btn-secondary:hover {
-    background: #f0a500;
+    background: #E0E0E0;
     transform: scale(1.05);
 }
 
 .intext-link {
-    color: #f0a500;
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -176,14 +177,14 @@ section p {
 /* Pycamp Section */
 .pycamp-section {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #1C1C1C;
 }
 
 .pycamp-section h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #333;
+    color: #FFD700;
 }
 
 .pycamp-content {
@@ -195,17 +196,17 @@ section p {
 .pycamp-item {
     flex: 1 1 30%;
     margin: 20px;
-    background: #fff;
+    background: #282828;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
 }
 
 .pycamp-item h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #333;
+    color: #FFD700;
 }
 
 .pycamp-item ul {
@@ -219,12 +220,12 @@ section p {
 
 .pycamp-item ul li a {
     text-decoration: none;
-    color: #007bff;
+    color: #FFD700;
     transition: color 0.2s ease-in-out;
 }
 
 .pycamp-item ul li a:hover {
-    color: #0056b3;
+    color: #E0E0E0;
 }
 
 .pycamp-item:hover {
@@ -237,7 +238,7 @@ section p {
 }
 
 #contact .contact-info a {
-    color: #f0a500;
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -247,8 +248,8 @@ section p {
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background: #282828;
+    color: #E0E0E0;
     padding: 20px 0;
     text-align: center;
 }
